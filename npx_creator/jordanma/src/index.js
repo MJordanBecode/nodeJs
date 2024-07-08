@@ -1,8 +1,12 @@
 #!/usr/bin/env node
 //index.js
 // import boxen from 'boxen';
+import {chalk} from 'chalk';
+
+const log = console.log;
 
 
+log(chalk.blue('Hello') + ' World' + chalk.red('!'));
 let urlGithug = "https://github.com/MJordanBecode";
 let urlLinkedn = "https://www.linkedin.com/in/jordan-masy/";
 
