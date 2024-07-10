@@ -1,7 +1,10 @@
 
-const mongoose = require("mongoose")
+require('dotenv').config()
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://masyjordan:Darius12*01%01@01;01@cluster0.velxzps.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const MONGO_USER = process.env.MONGO_USER;
+const MONGO_PW = process.env.MONGO_PW;
+const MONGO_DB = process.env.MONGO_DB;
+const uri = "mongodb+srv://MONGO_USER:MONGO_PW@MONGO_DB.velxzps.mongodb.net/?retryWrites=true&w=majority&appName=MONGO_DB";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
